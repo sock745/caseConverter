@@ -6,4 +6,14 @@ def convertToSnakeCase(pascalCamelCasedString):
       snakeCaseList.append(convertedCharacter)
     else:
       snakeCaseList.append(char)
-      pass
+  snakeCasedString = ''.join(snakeCaseList)
+  cleanSnakeCasedString = snakeCasedString.strip('_')
+  return cleanSnakeCasedString
+  snakeCaseList = ['_' + char.lower() if char.isupper() else char for char in pascalCamelCasedString]
+  return ''.join(snakeCaseList).strip('_')
+
+def main():
+  print(convertToSnakeCase("oldMcdonaldHadAFarm")
+  return
+
+main()
